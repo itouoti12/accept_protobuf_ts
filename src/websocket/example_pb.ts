@@ -35,6 +35,11 @@ export class User extends Message<User> {
   lastName = "";
 
   /**
+   * @generated from field: string middle_name = 7;
+   */
+  middleName = "";
+
+  /**
    * @generated from field: bool active = 3;
    */
   active = false;
@@ -64,6 +69,7 @@ export class User extends Message<User> {
   static readonly fields: FieldList = proto3.util.newFieldList(() => [
     { no: 1, name: "first_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 2, name: "last_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 7, name: "middle_name", kind: "scalar", T: 9 /* ScalarType.STRING */ },
     { no: 3, name: "active", kind: "scalar", T: 8 /* ScalarType.BOOL */ },
     { no: 4, name: "manager", kind: "message", T: User },
     { no: 5, name: "locations", kind: "scalar", T: 9 /* ScalarType.STRING */, repeated: true },
