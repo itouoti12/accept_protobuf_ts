@@ -81,6 +81,9 @@ export class User extends Message<User> {
   static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): User {
     return new User().fromJsonString(jsonString, options);
   }
+  
+
+
 
   static equals(a: User | PlainMessage<User> | undefined, b: User | PlainMessage<User> | undefined): boolean {
     return proto3.util.equals(User, a, b);
